@@ -44,6 +44,10 @@ RegisterCommand("addip", function(source)
                 MySQL.execute("INSERT INTO ip_whitelist VALUES (@playerIP)", {
                     ["@playerIP"] = args[1]
                 })
+            else
+                MySQL.Async.execute("INSERT INTO ip_whitelist VALUES (@playerIP)", {
+                    ["@playerIP"] = args[1]
+                })
             end
         end
     end
