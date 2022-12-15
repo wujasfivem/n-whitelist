@@ -5,5 +5,6 @@ lua54 'yes'
 
 server_script {						
 	'@mysql-async/lib/MySQL.lua',
-	'n-server.lua',
+	'config.lua',
+	'nh_server.lua',
 }
